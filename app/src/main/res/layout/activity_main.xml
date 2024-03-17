@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idTitle"
+        android:layout_width="331dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/txtTitle"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/idSpinner"
+        android:layout_width="294dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="12dp"
+        android:entries="@array/txtGroup"
+        android:prompt="@string/prompt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idAmountInput" />
+
+    <Button
+        android:id="@+id/idSubmitBtn"
+        android:layout_width="199dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSpinner" />
+
+    <ImageView
+        android:id="@+id/idImgThanks"
+        android:layout_width="259dp"
+        android:layout_height="278dp"
+        android:contentDescription="@string/txtImgAlt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idResult"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/thanks" />
+
+    <TextView
+        android:id="@+id/idResult"
+        android:layout_width="304dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSubmitBtn" />
+
+    <EditText
+        android:id="@+id/idAmountInput"
+        android:layout_width="314dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/txtTotal"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
